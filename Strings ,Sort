@@ -28,7 +28,11 @@ int main(){
     return 0;
     
 }
-
+Topic:** greedy, implementation, sortings,strings
+- **Difficulty:** Easy
+- **Language:** C++
 Explanation :
 Used - sort(n.begin(), n.end() [ to sort the string in increasing order ]
 For decreasing ordersort(n.begin(), n.end(), greater<char>());
+used 'n string to take every even index into new string from original sting s .
+mewInd tracks sorting and n[newInt] print next sorted and then itterate if 'i' even so it take sorted number and else it skip odd index that is'+' and print it .
