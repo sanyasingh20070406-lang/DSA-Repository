@@ -1,0 +1,34 @@
+800 rated problem : 339 A
+Code:
+#include<iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+int main(){
+    string s;
+    cin >> s;
+    string n = "";
+    for(int i = 0 ; i < s.length(); i+=2){
+        n += s[i];
+        
+    }
+    sort(n.begin(),n.end());
+    int newInd = 0;
+    for(int i = 0 ; i < s.length(); i++){
+        if(i % 2 == 0){
+            cout << n[newInd];
+            newInd++;
+        }else{
+            cout << s[i] ;
+        }
+    }
+    
+    cout << endl;
+    
+    return 0;
+    
+}
+
+Explanation :
+Used - sort(n.begin(), n.end() [ to sort the string in increasing order ]
+For decreasing ordersort(n.begin(), n.end(), greater<char>());
